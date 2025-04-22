@@ -135,13 +135,13 @@ li {
 
 /* -- section 2 -- */
 
+/* Секцтя лоты */
 .lots {
   height: 723px;
   margin-bottom: 120px;
-
-  margin-bottom: 120px;
   padding: 0 24px 120px 24px;
 }
+/* Заголовок секции лотов */
 .lots__heading {
   margin-bottom: 30px;
   padding-top: 5px;
@@ -153,50 +153,60 @@ li {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
+/* Список лотов(карточек) */
 .lots__card-list {
-  list-style: none;
+  /* Флекс */
   display: flex;
+  /* Перенос */
   flex-wrap: wrap;
   gap: 25px;
+  /* Убираем маркеры */
+  list-style: none;
+  /* Отступы */
   margin-bottom: 30px;
 }
+/* Размер карточек */
 .lots__card-list-item {
+  word-wrap: break-word;
+  max-width: 100%;
   width: 334px;
   min-height: 596px;
 }
+/* Лот 1 */
 .lots__card-list-item1 {
   background-image: url(/images/card-lot-01.jpg);
   background-position: center;
   background-size: cover;
 }
+/* лот 2 */
 .lots__card-list-item2 {
   background: center url(/images/card-lot-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* лот 3 */
 .lots__card-list-item3 {
   background-image: url(/images/card-lot-03.jpg);
   background-position: center;
   background-size: cover;
 }
 
+/* Общий класс для всех карточек */
 .card {
-  height: 100%;
+  position: relative;
+  height: 596px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: space-between;
 }
 
-.card_type_film {
-  background-size: 334px 596px;
-  z-index: -1;
+.lots a {
+  text-decoration: none;
 }
 
-.card_type_book,
-.card_type_picture {
-}
-
+/* оверлей общий */
 .overlay {
+  position: absolute;
   background-color: black;
   opacity: 60%;
   z-index: 0;
@@ -204,9 +214,13 @@ li {
   height: 100%;
 }
 
+/* Заголовок лота */
 .card__title {
-  position: absolute;
-  padding: 48px 40px 466px 40px;
+  position: relative;
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-right: 40px;
+
   text-transform: uppercase;
   text-decoration: underline;
   color: white;
@@ -219,9 +233,13 @@ li {
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
+
+/* Текст лота */
 .card__text {
-  position: absolute;
-  padding: 404px 40px 48px 40px;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
   color: white;
   font-family: Raleway;
   font-weight: normal;
@@ -229,6 +247,7 @@ li {
   z-index: 1;
   line-height: 120%;
 }
+/* Ссылка в конце лотов */
 .lots__look-more-link {
   padding: 40px;
   font-size: 20px;
@@ -241,26 +260,39 @@ li {
 
 .about {
   margin-bottom: 180px;
-}
-.about {
   margin: 0 24px 180px 24px;
   display: grid;
   /* display: inline-grid; */
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 334px 1fr;
 }
-
-.about__column {
+.about__column_1 {
+  justify-items: center;
+  padding: 35px;
+  /* justify-content: center;
+  align-content: start */
 }
-
+.about__column_2 {
+  align-items: end;
+  padding-left: 25px;
+  padding-top: 136px;
+  /* align-items: flex-end; */
+}
 .about__logo {
   background-color: black;
   width: 240px;
   height: 240px;
   border-radius: 50%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about__logo-image {
+.img {
+  z-index: 1;
+  width: 148px;
+  height: 148px;
+  position: absolute;
 }
-
 .about__title {
   font-size: 40px;
   text-transform: uppercase;
@@ -273,7 +305,9 @@ li {
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  font-size: 20px;
+  gap: 25px;
+  padding-top: 100px;
 }
 
 /* -- footer -- */
@@ -281,12 +315,16 @@ li {
 .footer {
   height: 180px;
   margin: 0;
-  padding: 0;
+  padding: 0 50px 82px 50px;
   display: grid;
-  /* grid-template-columns:  */
+  grid-template-columns: 1fr min-content 1fr;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
 }
 
-.address2 {
+
+
+.address_footer {
   height: 98px;
   font-style: normal;
   width: 264.57px;
@@ -297,6 +335,7 @@ li {
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
+  
 }
 
 .footer__menu {
