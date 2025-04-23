@@ -104,13 +104,15 @@ li {
 
 .aligned-text_center {
   align-self: center;
-  padding: 20px 380.5px 0 380.5px;
+  padding-top: 20px;
+  padding-left: 29px;
   z-index: 1;
 }
 
 .aligned-text_right {
   align-self: flex-end;
-  padding: 20px 50px 0 0;
+  padding-top: 20px;
+  padding-right: 21px;
   z-index: 1;
 }
 
@@ -176,7 +178,6 @@ li {
 }
 
 .lots__card-list-item {
-  position: relative;
   word-wrap: break-word;
   width: 334px;
   min-height: 596px;
@@ -195,6 +196,7 @@ li {
 }
 
 .card {
+  position: relative;
   height: 596px;
   display: flex;
   flex-direction: column;
@@ -222,7 +224,6 @@ li {
 }
 
 .card__text {
-  position: relative;
   padding: 0 40px 48px 40px;
   color: currentColor;
   font-family: Raleway, sans-serif;
