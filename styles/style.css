@@ -245,7 +245,7 @@ li {
 /* -- section 3 -- */
 
 .about {
-  margin: 0 24px 180px 24px;
+  padding: 0 24px 180px 24px;
   display: grid;
   grid-template-columns: 334px 1fr;
 }
