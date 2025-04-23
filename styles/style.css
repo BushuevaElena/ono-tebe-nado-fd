@@ -11,6 +11,7 @@ body {
   align-items: center;
   text-decoration-skip-ink: none;
   text-underline-offset: 4px;
+  max-width: 100%;
 }
 
 .header__menu {
@@ -146,7 +147,7 @@ li {
 .lots {
   padding: 0 24px;
   margin-bottom: 120px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .lots__heading {
@@ -246,7 +247,7 @@ li {
 /* -- section 3 -- */
 
 .about {
-  width: 100%;
+  max-width: 100%;
   padding: 0 24px 180px 24px;
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -301,6 +302,7 @@ li {
 .footer {
   padding: 0 50px 82px 50px;
   display: grid;
+  max-width: 100%;
   grid-template-columns: minmax(0, 1fr) min-content minmax(0, 1fr);
   text-decoration-skip-ink: none;
   text-underline-offset: 4px;
