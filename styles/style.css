@@ -78,6 +78,7 @@ li {
 .cover {
   background: no-repeat 51% url("../images/cover.jpg");
   background-size: cover;
+  width: 100%;
   margin-bottom: 180px;
   position: relative;
   text-transform: uppercase;
@@ -145,6 +146,7 @@ li {
 .lots {
   padding: 0 24px;
   margin-bottom: 120px;
+  width: 100%;
 }
 
 .lots__heading {
@@ -195,7 +197,6 @@ li {
 
 .card {
   position: relative;
-  height: 596px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -245,6 +246,7 @@ li {
 /* -- section 3 -- */
 
 .about {
+  width: 100%;
   padding: 0 24px 180px 24px;
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -297,7 +299,6 @@ li {
 /* -- footer -- */
 
 .footer {
-  margin: 0;
   padding: 0 50px 82px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
