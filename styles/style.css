@@ -7,7 +7,7 @@ body {
 .header {
   padding: 92px 50px 96px 50px;
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: minmax(0, 1fr) min-content minmax(0, 1fr);
   align-items: center;
   text-decoration-skip-ink: none;
   text-underline-offset: 4px;
@@ -301,7 +301,7 @@ li {
 .footer {
   padding: 0 50px 82px 50px;
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: minmax(0, 1fr) min-content minmax(0, 1fr);
   text-decoration-skip-ink: none;
   text-underline-offset: 4px;
   justify-content: space-between;
