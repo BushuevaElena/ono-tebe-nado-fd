@@ -197,7 +197,7 @@ li {
 
 .card {
   position: relative;
-  height: 596px;
+  min-height: 596px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
